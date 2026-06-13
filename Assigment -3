@@ -1,0 +1,236 @@
+Assignment 3 – OOPs in Python
+
+Q1. Student Class
+Python
+class Student:
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
+
+student1 = Student("Rahul", 20, "Data Science")
+
+print("Name:", student1.name)
+print("Age:", student1.age)
+print("Course:", student1.course)
+Output:
+Plain text
+Name: Rahul
+Age: 20
+Course: Data Science
+
+
+
+Q2. Car Class
+Python
+class Car:
+    def __init__(self, brand, model, price):
+        self.brand = brand
+        self.model = model
+        self.price = price
+
+car1 = Car("Toyota", "Fortuner", 3500000)
+car2 = Car("Hyundai", "Creta", 1800000)
+
+print(car1.brand, car1.model, car1.price)
+print(car2.brand, car2.model, car2.price)
+Output:
+Plain text
+Toyota Fortuner 3500000
+Hyundai Creta 1800000
+
+
+
+Q3. Employee Class Using Constructor
+Python
+class Employee:
+    def __init__(self, employee_id, name, salary):
+        self.employee_id = employee_id
+        self.name = name
+        self.salary = salary
+
+emp = Employee(101, "Aman", 50000)
+
+print("ID:", emp.employee_id)
+print("Name:", emp.name)
+print("Salary:", emp.salary)
+Output:
+Plain text
+ID: 101
+Name: Aman
+Salary: 50000
+
+
+
+Q4. Rectangle Area
+Python
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+rect = Rectangle(10, 5)
+print("Area =", rect.area())
+Output:
+Plain text
+Area = 50
+
+
+
+Q5. Circle Area
+Python
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+c = Circle(7)
+print("Area =", c.area())
+Output:
+Plain text
+Area = 153.86
+
+
+
+
+Q6. BankAccount Class
+Python
+class BankAccount:
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print("Balance after deposit:", self.balance)
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        print("Balance after withdrawal:", self.balance)
+
+acc = BankAccount("Rahul", 10000)
+
+acc.deposit(5000)
+acc.withdraw(2000)
+Output:
+Plain text
+Balance after deposit: 15000
+Balance after withdrawal: 13000
+
+
+
+Q7. Inheritance – Animal and Dog
+Python
+class Animal:
+    def sound(self):
+        print("Animal Sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+
+d = Dog()
+d.sound()
+Output:
+Plain text
+Bark
+
+
+
+Q8. Person and Student Class
+Python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Student(Person):
+    def __init__(self, name, age, roll_number):
+        super().__init__(name, age)
+        self.roll_number = roll_number
+
+s = Student("Riya", 19, 25)
+
+print("Name:", s.name)
+print("Age:", s.age)
+print("Roll Number:", s.roll_number)
+Output:
+Plain text
+Name: Riya
+Age: 19
+Roll Number: 25
+
+
+
+Q9. Calculator Class
+Python
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def divide(self, a, b):
+        return a / b
+
+c = Calculator()
+
+a = 20
+b = 5
+
+print("Addition =", c.add(a, b))
+print("Subtraction =", c.subtract(a, b))
+print("Multiplication =", c.multiply(a, b))
+print("Division =", c.divide(a, b))
+Output:
+Plain text
+Addition = 25
+Subtraction = 15
+Multiplication = 100
+Division = 4.0
+
+
+
+Q10. LibraryBook Class
+class LibraryBook:
+    def __init__(self, book_name, author, price):
+        self.book_name = book_name
+        self.author = author
+        self.price = price
+
+    def display_book_info(self):
+        print("Book Name:", self.book_name)
+        print("Author:", self.author)
+        print("Price:", self.price)
+        print()
+
+book1 = LibraryBook("Python Basics", "Amit", 350)
+book2 = LibraryBook("Data Science", "Rohit", 450)
+book3 = LibraryBook("Machine Learning", "Neha", 550)
+
+book1.display_book_info()
+book2.display_book_info()
+book3.display_book_info()
+Python
+Output:
+Plain text
+Book Name: Python Basics
+Author: Amit
+Price: 350
+
+Book Name: Data Science
+Author: Rohit
+Price: 450
+
+Book Name: Machine Learning
+Author: Neha
+Price: 550
