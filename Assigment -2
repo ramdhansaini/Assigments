@@ -1,0 +1,218 @@
+Assignment 2 – Basic Python
+
+1. Tuple Operations
+
+my_tuple = (10, 20, 30, 40, 50)
+
+print("First element:", my_tuple[0])
+print("Last element:", my_tuple[-1])
+print("Length of tuple:", len(my_tuple))
+print("Elements from index 1 to 3:", my_tuple[1:4])
+
+Output
+
+First element: 10
+Last element: 50
+Length of tuple: 5
+Elements from index 1 to 3: (20, 30, 40)
+
+---
+
+2. Fruits Tuple
+
+fruits = ("apple", "banana", "mango", "orange")
+
+print("Second fruit:", fruits[1])
+print("Last two fruits:", fruits[-2:])
+print("Total fruits:", len(fruits))
+
+Output
+
+Second fruit: banana
+Last two fruits: ('mango', 'orange')
+Total fruits: 4
+
+---
+
+3. Set Operations
+
+numbers = {10, 20, 30, 40, 50}
+
+print("Complete set:", numbers)
+print("Length:", len(numbers))
+print("Is 30 present?", 30 in numbers)
+
+Output
+
+Complete set: {10, 20, 30, 40, 50}
+Length: 5
+Is 30 present? True
+
+---
+
+4. Union and Intersection
+
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+print("Union:", set1.union(set2))
+print("Intersection:", set1.intersection(set2))
+
+Output
+
+Union: {1, 2, 3, 4, 5, 6}
+Intersection: {3, 4}
+
+---
+
+5. Dictionary
+
+student = {"name": "Kriti", "age": 20, "course": "Python"}
+
+print("Dictionary:", student)
+print("Name:", student["name"])
+print("Age:", student["age"])
+print("Course:", student["course"])
+
+Output
+
+Dictionary: {'name': 'Kriti', 'age': 20, 'course': 'Python'}
+Name: Kriti
+Age: 20
+Course: Python
+
+---
+
+6. Largest, Second Largest and Smallest
+
+numbers = [12, 45, 7, 23, 56, 89, 34]
+
+largest = max(numbers)
+smallest = min(numbers)
+
+numbers.sort()
+second_largest = numbers[-2]
+
+print("Largest:", largest)
+print("Second Largest:", second_largest)
+print("Smallest:", smallest)
+
+Output
+
+Largest: 89
+Second Largest: 56
+Smallest: 7
+
+---
+
+7. Reverse List Without reverse()
+
+arr = [10, 20, 30, 40, 50, 60]
+
+def reverse_list(lst):
+    return lst[::-1]
+
+print(reverse_list(arr))
+
+Output
+
+[60, 50, 40, 30, 20, 10]
+
+---
+
+8. Tuple Calculations
+
+data = (5, 10, 15, 20, 25, 30, 35)
+
+count = 0
+for i in data:
+    if i % 5 == 0:
+        count += 1
+
+total = sum(data)
+average = total / len(data)
+
+print("Divisible by 5:", count)
+print("Sum:", total)
+print("Average:", average)
+
+Output
+
+Divisible by 5: 7
+Sum: 140
+Average: 20.0
+
+---
+
+9. Student Marks Dictionary
+
+students = {
+    "Aman": 78,
+    "Riya": 92,
+    "Kriti": 88,
+    "Rahul": 95
+}
+
+highest = max(students, key=students.get)
+lowest = min(students, key=students.get)
+
+print("Highest Marks:", highest, students[highest])
+print("Lowest Marks:", lowest, students[lowest])
+
+print("Students scoring more than 85:")
+for name, marks in students.items():
+    if marks > 85:
+        print(name, marks)
+
+Output
+
+Highest Marks: Rahul 95
+Lowest Marks: Aman 78
+
+Students scoring more than 85:
+Riya 92
+Kriti 88
+Rahul 95
+
+---
+
+10. Frequency of Elements
+
+def count_frequency(arr):
+    for i in set(arr):
+        print(i, "->", arr.count(i), "times")
+
+arr = [1, 2, 2, 3, 1, 4, 2]
+count_frequency(arr)
+
+Output
+
+1 -> 2 times
+2 -> 3 times
+3 -> 1 times
+4 -> 1 times
+
+---
+
+11. Find Duplicate Elements
+
+def find_duplicates(arr):
+    duplicates = set()
+
+    for item in arr:
+        if arr.count(item) > 1:
+            duplicates.add(item)
+
+    print("Duplicate elements are:")
+    for item in duplicates:
+        print(item)
+
+arr = [10, 20, 30, 20, 40, 10, 50, 30]
+find_duplicates(arr)
+
+Output
+
+Duplicate elements are:
+10
+20
+30
