@@ -1,0 +1,177 @@
+Assignment 1 – Basic Python
+
+Q1. Difference Between Data Types
+
+1. Integer (int)
+Stores whole numbers.
+Example:
+Python
+age = 20
+print(type(age))
+Output:
+
+<class 'int'>
+
+2. Float (float)
+Stores decimal numbers.
+Example:
+Python
+height = 5.8
+print(type(height))
+Output:
+
+<class 'float'>
+
+3. String (str)
+Stores text inside quotes.
+Example:
+Python
+name = "Gargi"
+print(type(name))
+Output:
+
+<class 'str'>
+
+4. Boolean (bool)
+Stores True or False values.
+Example:
+Python
+is_student = True
+print(type(is_student))
+Output:
+
+<class 'bool'>
+
+
+
+Q2. Create Variables and Print Values
+Python
+name = "Your Name"
+age = 20
+city = "Jaipur"
+
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
+Output:
+
+Name: Your Name
+Age: 20
+City: Jaipur
+
+
+Q3. Name in Uppercase and Character Count
+Python
+name = input("Enter your name: ")
+
+print("Uppercase Name:", name.upper())
+print("Total Characters:", len(name))
+Sample Output:
+
+Enter your name: Gargi
+Uppercase Name: GARGI
+Total Characters: 5
+
+
+
+Q4. Five Common String Methods
+1. upper()
+Converts text to uppercase.
+Python
+print("hello".upper())
+Output:
+
+HELLO
+2. lower()
+Converts text to lowercase.
+Python
+print("HELLO".lower())
+Output:
+
+hello
+3. replace()
+Replaces one word with another.
+Python
+print("Python".replace("Python", "Java"))
+Output:
+
+Java
+4. strip()
+Removes extra spaces.
+Python
+print("  Hello  ".strip())
+Output:
+
+Hello
+5. split()
+Splits a string into a list.
+Python
+print("Apple Mango Banana".split())
+Output:
+
+['Apple', 'Mango', 'Banana']
+
+
+
+Q5. List of Five Fruits
+Python
+fruits = ["Apple", "Mango", "Banana", "Orange", "Grapes"]
+
+print("Complete List:", fruits)
+print("First Element:", fruits[0])
+print("Last Element:", fruits[-1])
+print("Total Items:", len(fruits))
+Output:
+
+Complete List: ['Apple', 'Mango', 'Banana', 'Orange', 'Grapes']
+First Element: Apple
+Last Element: Grapes
+Total Items: 5
+Q6. List Operations
+Python
+numbers = [10, 20, 30, 40, 50]
+
+numbers.append(60)
+numbers.remove(20)
+
+print("Updated List:", numbers)
+Output:
+
+Updated List: [10, 30, 40, 50, 60]
+
+
+
+Q7. What is Artificial Intelligence (AI)?
+Artificial Intelligence (AI) is a technology that enables machines and computers to perform tasks that normally require human intelligence, such as learning, reasoning, problem-solving, and decision-making.
+Importance of AI
+Saves time and effort.
+Improves accuracy.
+Automates repetitive tasks.
+Helps in better decision-making.
+Real-Life Applications of AI
+ChatGPT
+Self-driving cars
+Netflix recommendations
+Voice assistants (Alexa, Siri)
+
+
+
+Q8. Identify AI Examples
+Example
+AI or Not AI?
+Reason
+ChatGPT
+AI
+Understands and generates human-like text.
+Google Maps Route Prediction
+AI
+Uses data to predict traffic and best routes.
+Calculator
+Not AI
+Performs fixed mathematical calculations only.
+Netflix Recommendations
+AI
+Suggests content based on user preferences.
+Alexa/Siri
+AI
+Understands voice commands and responds intelligently.
